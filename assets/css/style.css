@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+    color: #666666;
+    font-family: Arial, 'Helvetica', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+body {
+    background-image: url("https://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-8.gif");
+}
+
+.texture {
+     background-image: url("https://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-8.gif");
+}
+
+/* navigation styling */
+h1, h3{
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;;
+}
+
+nav {
+    margin-bottom: 10%;
+}
+
+/* main content*/
+
+.wrapper {
+  width: 980;
+  margin: 40px auto;
+}
+
+.container {
+    margin:15%;
+    padding:30px;
+    border: 3px solid lightgray;
+    max-width: 900;
+    margin:20%;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* styles specific to contact page */
+.input-container {
+    margin: 10%;
+    border-radius: 5px;
+    border: 3px solid darkgray;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    max-width: 800px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #666666;
+}
+
+/* styles specific to the portfolio page */
+.thumbnail {
+ position: relative;
+ margin-bottom: 40px;
+ cursor: pointer;
+ transition: all .8s ease;
+}
+
+.thumbnail:hover {
+ transform: scale(1.1);
+}
+
+.thumbnail img {
+ width: 200px;
+ height: 200px;
+ .left {
+ float: left;
+}
+
+.right {
+ float: right;
+}
+
+/* The label on the image. */
+.label {
+ position: absolute;
+ bottom: 20px;
+ left: 15px;
+ height: 60px;
+ line-height: 60px;
+ width: calc(100% - 30px);
+ text-align: center;
+ color: white;
+ font-size: 1.2em;
+ background-color: #666666(74, 170, 165, .7);
+}
+
+
+/* media query practice */
+  .wrapper {
+    width: 1024px;
+  }
+
+  #main-content,
+#sidebar {
+    margin: 50px;
+    padding: 10px 20px;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+  body {
+    background-color: lightcoral;
+  }
+  
+  @media screen and (max-width: 640px) {
+  body {
+    background-color: red;
+  } 
+ 
+  .wrapper {
+    width: 600px;
+}
+
