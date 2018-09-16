@@ -5,84 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <title>Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container img {
+            vertical-align: middle;
+        }
+
+        .container .content {
+            position: relative;
+            top: 10px;
+            opacity: -100%;
+            background: #4aaaa5;
+            color: #f1f1f1;
+            width: 100%;
+            height: 20px;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">
-            <h3>Kat Eng</h3>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span>
-                    </a> </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <section class='links_bar'>
+            <h1 id='logo'>
+                Kat Eng
+            </h1>
+            <a href="index.html">About |</a>
+            <a href="#">Portfolio |</a>
+            <a href="contact.html">Contact</a>
+        </section>
+    </header>
 
-    <div class="container" id="bodyContent">
-        <div class="col-md-8 col-xs-12">
-            <section>
-                <h1>Portfolio</h1>
-                <div class="picSection row">
-                    <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="images/portfolio/daenerys.jpg" alt="music">
-                        <span class="label">Daenerys</span>
-                    </div>
-                    <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="images/portfolio/jsnow.jpg" alt="cooking">
-                        <span class="label">John Snow</span>
-                    </div>
+    <div class='clearfix'></div>
+
+    <section id="mid">
+        <h1>Portfolio</h1>
+
+        <div class="container">
+            <div id="box-set">
+
+                <div class="box">
+                    <a href="http://adventuretime.wikia.com/wiki/Finn" target="_blank">
+                        <img src="https://media1.tenor.com/images/87aecb9e8cc45403a20d4c1b7b85d083/tenor.gif?itemid=5404464"
+                            style="width:100%" alt="Finn">
+                    </a>
+                    <h3 class="h3">Hangman</h3>
                 </div>
-                <div class="picSection row">
-                    <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="images/portfolio/tyrion.jpg" alt="motorcycles">
-                        <span class="label">Tyrion</span>
-                    </div>
-                    <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="images/portfolio/arya.jpg" alt="swimming">
-                        <span class="label">Arya</span>
-                    </div>
+                <div class="box">
+                    <a href="http://adventuretime.wikia.com/wiki/BMO">
+                        <img src="https://media1.giphy.com/media/12XTNObsY1pWQU/giphy.gif" style="width:100%" alt="bmo">
+                    </a>
+                    <h3 class="h3">RPG Game</h3>
                 </div>
-                <div class="picSection row">
-                    <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="images/portfolio/tormund.jpg" alt="biking">
-                        <span class="label">Tormunc</span>
-                    </div>
-                    <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="images/portfolio/varys.jpg" alt="pets">
-                        <span class="label">Varys</span>
-                    </div>
+                <div class="box">
+                    <a href="http://adventuretime.wikia.com/wiki/Simon_Petrikov_(Ice_King)" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Ice_King.png/220px-Ice_King.png"
+                            style="width:100%" alt="ice king">
+                    </a>
+                    <h3 class="h3">Trivia Game</h3>
                 </div>
-            </section>
-        </div>
-    </div>
-    <!-- This is a blank div that is given the same height as the footer. This makes the body long enough to add in a footer without it overlapping content in the body. -->
-    <div class="push"></div>
-    <div class="row-lg-12">
-        <div class="card">
-            <div class="card-body">
-                <footer class="text-center">
-                    Copywrite Kat Eng 2018 &copy;
-                </footer>
+                <div class="box">
+                    <a href="http://adventuretime.wikia.com/wiki/Lumpy_Space_Princess" target="_blank">
+                        <img src="https://media.giphy.com/media/G7zF4rH9NIQdW/source.gif" style="width:100%" alt="Lumpy Space Princess">
+                    </a>
+                    <h3 class="h3">Rutger Info Widget</h3>
+                </div>
+                <div class="box">
+                    <a href="http://adventuretime.wikia.com/wiki/Marshall_Lee" target="_blank">
+                        <img src="https://i.pinimg.com/originals/70/8b/2f/708b2fa16320ffdebdb6fb49822c6876.jpg" style="width:100%"
+                            alt="marshall lee">
+                    </a>
+                    <h3 class="h3">Rock Paper Scissors</h3>
+                </div>
             </div>
+
         </div>
-    </div>
+        <!-- Photo Grid -->
+        <!-- I realize that you probably wanted me to use the placement properties to create a grid here, however, I was having trouble, so for the sake of a superficial fix I created what I just learned was a photo grid! -->
+        <!-- <div class="container"> 
+        <div class="row">
+            <div class="column">
+                <a href="http://adventuretime.wikia.com/wiki/Finn" target="_blank">
+                    <img src="https://media1.tenor.com/images/87aecb9e8cc45403a20d4c1b7b85d083/tenor.gif?itemid=5404464" style="width:100%" alt="Finn">
+                </a>
+                <a href="http://adventuretime.wikia.com/wiki/BMO">
+                    <img src="https://media1.giphy.com/media/12XTNObsY1pWQU/giphy.gif" style="width:100%" alt="bmo">
+                </a>    
+                <a href="http://adventuretime.wikia.com/wiki/Simon_Petrikov_(Ice_King)"  target="_blank">
+                    <img     src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Ice_King.png/220px-Ice_King.png" style="width:100%" alt="ice king">
+                </a>
+            </div>
+
+            <div class="column">
+                <a href="http://adventuretime.wikia.com/wiki/Lumpy_Space_Princess"  target="_blank">
+                    <img src="https://media.giphy.com/media/G7zF4rH9NIQdW/source.gif" style="width:100%" alt="Lumpy Space Princess">
+                </a>
+                <a href="http://adventuretime.wikia.com/wiki/Marshall_Lee"  target="_blank">
+                    <img src="https://i.pinimg.com/originals/70/8b/2f/708b2fa16320ffdebdb6fb49822c6876.jpg" style="width:100%" alt="marshall lee">
+                </a>
+            </div>
+        </div>           
+    </div>          
+         -->
+    </section>
+
+
+    <div class='clearfix'></div>
+    <footer>Copyright 2018 Kat Eng &copy;</footer>
 </body>
 
-</html>
+</html>>
