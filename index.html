@@ -1,87 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+  box-sizing: border-box;
+  color: #666666;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kat Eng - Bootstrap Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-</head>
+/* element styling */
 
-<body>
-    <div class="row">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">
-                <h2>Kat Eng</h2>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="wrapper">
-        <div class="push"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card-body">
-                        <h1>About Me</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="https://avatars0.githubusercontent.com/u/39654422?s=460&v=4/200x200" alt="Kat Eng Profile Picture"
-                                class="img-thumbnail">
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut
-                                dictum
-                                tristique,
-                                nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis
-                                vitae
-                                felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
-                                non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex
-                                cursus,
-                                luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi
-                                et
-                                neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque
-                                egestas
-                                dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
-                                posuere sem congue a.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	text-align: left;
+  font-size: 18px;
+  line-height: 16px;
+  background:lightgray;
+}
 
-    <div class="row-lg-12">
-        <div class="card">
-            <div class="card-body">
-                <footer class="text-center">
-                    Copywrite Kat Eng 2018 &copy;
-                </footer>
-            </div>
-        </div>
-    </div>
-</body>
+img {
+  width: 250px;
+  padding: 20px;
+  height: auto;
+  float:left;
+  background: #fff
+}
 
-</html>
+p {
+  padding-top: 10px;
+  color: gray;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-size: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #dddddd;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 960px;
+}
+
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+li {
+    /* display: inline; */
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10%;
+
+    
+}
+
+.links_bar {
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 10%;
+  padding: 40px;
+  background: #ffffff;
+  /* z-index:-1; */
+  overflow: auto;
+  vertical-align: middle;
+}
+
+#logo {
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-style: bold;
+  float: left;
+  width: 300px;
+  height: 100px;
+  padding: 40px;
+  margin-left: 40px;
+  color: #fff;
+  background: #4aaaa5;
+  border: 1px solid #eee;
+  z-index: 1;
+} 
+
+/* body tags and ids */
+
+#mid {
+  float: left;
+  max-width: 900px;;
+  height: auto;
+  color: #333333;
+  background: #ffffff;
+  padding: 50px;
+  margin-top: 30px; 
+  margin-right:50px; 
+  margin-left: 50px; 
+  margin-bottom:50px;
+}
+
+footer {
+  /* position: absolute; */
+  bottom:0;
+  height: 75px;
+  width: 100%;
+  color: #eee;
+  background: #666666;
+	border-top: 10px solid #4aaaa5;
+  margin-top: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*styling related to portfolio*/
+
+.header {
+    text-align: center;
+    /* padding: 32px; */
+}
+
+.h3 {
+  position: relative;
+  top:10;
+  text-align: center;
+  font-size: 20;
+  line-height: 1;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  float: left;
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+  color: #fff;
+  background: #4aaaa5;
+  border: 1px solid #eee;
+}
+
+#box-set {
+    position: relative;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    background: #ffffff;
+  }
+
+.box {
+   display: block;
+   width: 200px;
+   height:auto;
+   float: left;
+   margin: 20px;
+}
+
+/* CSS Specific to my 'Contact' page */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: #ffffff;
+}
+
+input[type=submit] {
+    display:flex;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: 3px solid #dddddd;
+    border-radius: 2px solid color=#dddddd;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #10927f;
+}
+
+.container {
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 20px;
+    
+}
+
+
+@media screen and (max-width: 980px) {
+  
+  body {
+
+  }
+  
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: darkgrey;
+  }
+
+  img {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  height: auto;
+  float:left;
+  background: #fff
+}
+
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+   img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  height: auto;
+  float:left;
+  background: #fff
+}
+
+li {
+ place-content: center;
+}
+
+.links_bar {
+  float: left;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  vertical-align: middle;
+  padding: 30px;
+}
+
+#logo {
+  position: static;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-style: bold;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  margin: 0;
+  color: #fff;
+  background: #4aaaa5;
+  border: 1px solid #eee;
+} 
